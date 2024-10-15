@@ -9,12 +9,12 @@ import logging
 logging.basicConfig(level=logging.INFO)
 
 # Load movie data and similarities
-Movies_dict = pickle.load(open('movies_dict.pkl', 'rb'))
+Movies_dict = pickle.load(open('Models/movies_dict.pkl', 'rb'))
 movies = pd.DataFrame(Movies_dict)
 
-similarity = pickle.load(open('storyline_similarity.pkl', 'rb'))
-similarity2 = pickle.load(open('director_similarity.pkl', 'rb'))
-similarity3 = pickle.load(open('cast_similarity.pkl', 'rb'))
+similarity = pickle.load(open('Models/storyline_similarity.pkl', 'rb'))
+similarity2 = pickle.load(open('Models/director_similarity.pkl', 'rb'))
+similarity3 = pickle.load(open('Models/cast_similarity.pkl', 'rb'))
 
 st.set_page_config(layout="wide", page_title="Movie Recommender Engine", page_icon="🎬")
 
